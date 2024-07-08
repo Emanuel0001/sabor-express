@@ -1,16 +1,24 @@
-print('Python na Escola de Programação da Alura')
-nome = 'hitallo'
-idade = 26
-print(f'meu nome é {nome} e minha idade é {idade} ')
-print('meu nome é {} e tenho {} anos de idade'.format(nome,idade))
-print(""" 
-      A
-      L
-      U
-      R
-      A
-      """)
+numero = int(input('digite um numero: '))
+if numero % 2 == 0:
+    print(f'numero {numero} é par')
+else:
+    print(f'numero {numero} é impar')
 
-pi = 3.14159
+idade = int(input('Digite sua idade'))
+if idade <= 12:
+   print('voce é criança')
+elif idade >= 13 and idade <=18:
+   print('voce é adolecente')
+else: 
+   print('voce é adulto')
 
-print(f'o valor aproximado de pi é {pi:.2f}')
+usuario = 'hitallo'
+senha = '10203040'
+
+usuario_test = input('usuario: ')
+senha_test = input('senha: ')
+
+if usuario == usuario and senha == senha_test:
+   print('login success')
+else:
+   print('usuario e senha invalidos')
